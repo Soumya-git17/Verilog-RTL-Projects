@@ -1,0 +1,89 @@
+$date
+	Sun Sep 28 11:16:39 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module min_max_tb $end
+$var wire 1 ! A_less_B $end
+$var wire 1 " A_great_B $end
+$var wire 1 # A_equal_B $end
+$var reg 4 $ A [3:0] $end
+$var reg 4 % B [3:0] $end
+$scope module UUT $end
+$var wire 4 & A [3:0] $end
+$var wire 4 ' B [3:0] $end
+$var wire 1 ! A_less_B $end
+$var wire 1 " A_great_B $end
+$var wire 1 # A_equal_B $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b1 '
+b100 &
+b1 %
+b100 $
+0#
+1"
+0!
+$end
+#10
+b11 %
+b11 '
+b1001 $
+b1001 &
+#20
+1#
+0"
+b1101 %
+b1101 '
+b1101 $
+b1101 &
+#30
+1"
+0#
+b10 %
+b10 '
+b101 $
+b101 &
+#40
+1!
+0"
+b1101 %
+b1101 '
+b1 $
+b1 &
+#50
+b110 $
+b110 &
+#60
+1"
+0!
+b1100 %
+b1100 '
+b1101 $
+b1101 &
+#70
+b110 %
+b110 '
+b1001 $
+b1001 &
+#80
+1!
+0"
+b1010 %
+b1010 '
+b101 $
+b101 &
+#90
+b111 %
+b111 '
+#100

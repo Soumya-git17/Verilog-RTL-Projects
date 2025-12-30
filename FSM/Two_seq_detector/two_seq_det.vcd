@@ -1,0 +1,122 @@
+$date
+	Wed Dec 10 00:40:30 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module two_seq_det_tb $end
+$var wire 1 ! detected_0111 $end
+$var wire 1 " detected_0110 $end
+$var reg 1 # clk $end
+$var reg 1 $ din $end
+$var reg 1 % reset $end
+$scope module DUT $end
+$var wire 1 # clk $end
+$var wire 1 $ din $end
+$var wire 1 % reset $end
+$var parameter 3 & IDLE $end
+$var parameter 3 ' S0 $end
+$var parameter 3 ( S01 $end
+$var parameter 3 ) S011 $end
+$var reg 3 * current_state [2:0] $end
+$var reg 1 " detected_0110 $end
+$var reg 1 ! detected_0111 $end
+$var reg 3 + next_state [2:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b11 )
+b10 (
+b1 '
+b0 &
+$end
+#0
+$dumpvars
+b1 +
+b0 *
+1%
+0$
+0#
+0"
+0!
+$end
+#5
+b1 *
+0%
+1#
+#10
+0#
+#15
+1#
+#20
+0#
+#25
+b10 +
+1$
+1#
+#30
+0#
+#35
+b11 +
+b10 *
+1#
+#40
+0#
+#45
+1"
+b11 *
+b1 +
+0$
+1#
+#50
+0#
+#55
+0"
+b1 *
+1#
+#60
+0#
+#65
+1#
+#70
+0#
+#75
+b10 +
+1$
+1#
+#80
+0#
+#85
+b11 +
+b10 *
+1#
+#90
+0#
+#95
+1!
+b0 +
+b11 *
+1#
+#100
+0#
+#105
+b0 *
+0"
+0!
+b1 +
+0$
+1#
+#110
+0#
+#115
+b1 *
+1#
+#120
+0#
+#125
+1#

@@ -1,0 +1,89 @@
+$date
+	Thu Oct 02 16:39:51 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module IC_74148_tb $end
+$var wire 1 ! GS $end
+$var wire 1 " EnOut $end
+$var wire 3 # A [2:0] $end
+$var reg 8 $ D [7:0] $end
+$var reg 1 % En $end
+$scope module uut $end
+$var wire 8 & D [7:0] $end
+$var wire 1 % En $end
+$var reg 3 ' A [2:0] $end
+$var reg 1 " EnOut $end
+$var reg 1 ! GS $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b111 '
+b11111111 &
+0%
+b11111111 $
+b111 #
+1"
+1!
+$end
+#10
+0"
+0!
+b0 #
+b0 '
+b11111110 $
+b11111110 &
+#20
+b1 #
+b1 '
+b11111101 $
+b11111101 &
+#30
+b10 #
+b10 '
+b11111011 $
+b11111011 &
+#40
+b11 #
+b11 '
+b11110111 $
+b11110111 &
+#50
+b100 #
+b100 '
+b11101111 $
+b11101111 &
+#60
+b101 #
+b101 '
+b11011111 $
+b11011111 &
+#70
+b110 #
+b110 '
+b10111111 $
+b10111111 &
+#80
+b111 #
+b111 '
+b1111111 $
+b1111111 &
+#90
+1"
+1!
+b10111110 $
+b10111110 &
+#100
+b0 $
+b0 &
+1%
+#110

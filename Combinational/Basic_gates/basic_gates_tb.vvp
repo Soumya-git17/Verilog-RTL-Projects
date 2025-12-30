@@ -1,0 +1,60 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000002369e02bb50 .scope module, "basic_gates" "basic_gates" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "A";
+    .port_info 1 /INPUT 1 "B";
+    .port_info 2 /OUTPUT 1 "out_and";
+    .port_info 3 /OUTPUT 1 "out_or";
+    .port_info 4 /OUTPUT 1 "out_nand";
+    .port_info 5 /OUTPUT 1 "out_nor";
+    .port_info 6 /OUTPUT 1 "out_xor";
+    .port_info 7 /OUTPUT 1 "out_xnor";
+o000002369df56fd8 .functor BUFZ 1, C4<z>; HiZ drive
+o000002369df57008 .functor BUFZ 1, C4<z>; HiZ drive
+L_000002369df230a0 .functor AND 1, o000002369df56fd8, o000002369df57008, C4<1>, C4<1>;
+L_000002369e0285c0 .functor OR 1, o000002369df56fd8, o000002369df57008, C4<0>, C4<0>;
+L_000002369e02dba0 .functor AND 1, o000002369df56fd8, o000002369df57008, C4<1>, C4<1>;
+L_000002369df54c90 .functor NOT 1, L_000002369e02dba0, C4<0>, C4<0>, C4<0>;
+L_000002369df54d00 .functor OR 1, o000002369df56fd8, o000002369df57008, C4<0>, C4<0>;
+L_000002369df54e90 .functor NOT 1, L_000002369df54d00, C4<0>, C4<0>, C4<0>;
+L_000002369df54f00 .functor NOT 1, o000002369df57008, C4<0>, C4<0>, C4<0>;
+L_000002369dfa1bb0 .functor AND 1, o000002369df56fd8, L_000002369df54f00, C4<1>, C4<1>;
+L_000002369dfa1f30 .functor NOT 1, o000002369df56fd8, C4<0>, C4<0>, C4<0>;
+L_000002369dfa1c90 .functor AND 1, L_000002369dfa1f30, o000002369df57008, C4<1>, C4<1>;
+L_000002369dfa1910 .functor OR 1, L_000002369dfa1bb0, L_000002369dfa1c90, C4<0>, C4<0>;
+L_000002369dfa1d00 .functor AND 1, o000002369df56fd8, o000002369df57008, C4<1>, C4<1>;
+L_000002369dfa1980 .functor NOT 1, o000002369df56fd8, C4<0>, C4<0>, C4<0>;
+L_000002369dfa1fa0 .functor NOT 1, o000002369df57008, C4<0>, C4<0>, C4<0>;
+L_000002369dfa1ec0 .functor AND 1, L_000002369dfa1980, L_000002369dfa1fa0, C4<1>, C4<1>;
+L_000002369dfa1b40 .functor OR 1, L_000002369dfa1d00, L_000002369dfa1ec0, C4<0>, C4<0>;
+v000002369e028520_0 .net "A", 0 0, o000002369df56fd8;  0 drivers
+v000002369df54310_0 .net "B", 0 0, o000002369df57008;  0 drivers
+v000002369df54810_0 .net *"_ivl_12", 0 0, L_000002369df54f00;  1 drivers
+v000002369df54450_0 .net *"_ivl_14", 0 0, L_000002369dfa1bb0;  1 drivers
+v000002369df548b0_0 .net *"_ivl_16", 0 0, L_000002369dfa1f30;  1 drivers
+v000002369df54950_0 .net *"_ivl_18", 0 0, L_000002369dfa1c90;  1 drivers
+v000002369df53d70_0 .net *"_ivl_22", 0 0, L_000002369dfa1d00;  1 drivers
+v000002369df54bd0_0 .net *"_ivl_24", 0 0, L_000002369dfa1980;  1 drivers
+v000002369df54a90_0 .net *"_ivl_26", 0 0, L_000002369dfa1fa0;  1 drivers
+v000002369df54b30_0 .net *"_ivl_28", 0 0, L_000002369dfa1ec0;  1 drivers
+v000002369df53cd0_0 .net *"_ivl_4", 0 0, L_000002369e02dba0;  1 drivers
+v000002369df54130_0 .net *"_ivl_8", 0 0, L_000002369df54d00;  1 drivers
+v000002369df53e10_0 .net "out_and", 0 0, L_000002369df230a0;  1 drivers
+v000002369df53eb0_0 .net "out_nand", 0 0, L_000002369df54c90;  1 drivers
+v000002369df53f50_0 .net "out_nor", 0 0, L_000002369df54e90;  1 drivers
+v000002369df549f0_0 .net "out_or", 0 0, L_000002369e0285c0;  1 drivers
+v000002369df53ff0_0 .net "out_xnor", 0 0, L_000002369dfa1b40;  1 drivers
+v000002369df541d0_0 .net "out_xor", 0 0, L_000002369dfa1910;  1 drivers
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    ".\basic_gates.v";
