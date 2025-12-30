@@ -1,7 +1,6 @@
 # Verilog HDL – Digital & FPGA-Oriented Design Portfolio
 
-This repository is a **curated showcase of Verilog HDL designs**
-demonstrating my hands-on experience with **digital electronics,
+This repository is some of my hands-on experience with **digital electronics,
 RTL design, and FPGA-oriented hardware development**.
 
 The projects span **combinational logic, arithmetic datapaths,
@@ -116,7 +115,7 @@ This section reflects architectural thinking beyond individual logic blocks.
 ## 👤 Author
 
 **Soumyadip Dutta**  
-B.Tech – Electrical Engineering (EE)  
 
 ---
+
 
